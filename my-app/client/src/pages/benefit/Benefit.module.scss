@@ -1,0 +1,27 @@
+.benefitBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (width <= 560px) {
+    flex-direction: column;
+  }
+
+  .benefit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2055291a;
+
+    @media (width <= 560px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    img,
+    p {
+      padding: 0 20px;
+    }
+  }
+}

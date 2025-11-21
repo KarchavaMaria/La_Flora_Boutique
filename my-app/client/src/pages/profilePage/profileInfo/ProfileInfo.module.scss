@@ -1,0 +1,73 @@
+.profileInfo {
+  margin: 20px;
+  border: 1px solid #2055291a;
+  border-radius: 12px;
+  padding: 20px;
+
+  .profileUserInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btnEdit {
+      display: flex;
+      justify-content: end;
+
+      .edit {
+        background: none;
+        border: none;
+        margin: 30px;
+
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+    border-bottom: 1px solid gray;
+    width: 300px;
+  }
+
+  .formEdit {
+    display: flex;
+    flex-direction: column;
+
+    .inputText {
+      width: 350px;
+      height: 50px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 15px;
+      position: relative;
+      background: rgba(#205529, 0.03);
+      border: 1px solid #2055291a;
+      border-radius: 12px;
+
+      &.placeholder {
+        color: gray;
+        transition: all 1s ease-in-out;
+      }
+
+      &:focus::placeholder {
+        transform: translateY(-15px) scale(0.9);
+        opacity: 0.6;
+        font-size: 15px;
+      }
+    }
+
+    .btnSave {
+      margin-top: 20px;
+      width: 350px;
+      height: 50px;
+      font-size: 15px;
+      position: relative;
+      background: #205529;
+      border: 1px solid #2055291a;
+      border-radius: 12px;
+      color: white;
+    }
+  }
+}

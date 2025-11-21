@@ -1,0 +1,95 @@
+.cartList {
+  .flowerCart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 20px;
+
+    .imageFlower {
+      img {
+        border-radius: 5%;
+        margin: 20px;
+        width: 140px;
+        height: 150px;
+        transition: 2s all ease;
+        box-shadow: 8px 8px 8px #aaa;
+
+        @media (width <= 900px) {
+          margin: 0 0 0 10px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .name {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+      align-items: center;
+    }
+
+    .price,
+    .sum {
+      display: flex;
+      align-items: center;
+
+      @media (width <= 800px) {
+        justify-content: center;
+      }
+    }
+
+    .price {
+      @media (width <= 500px) {
+        display: none;
+      }
+    }
+  }
+
+  .qty {
+    display: flex;
+    align-items: center;
+
+    @media (width <= 500px) {
+      display: none;
+    }
+
+    .btnQty {
+      display: flex;
+      align-items: center;
+      border: 2px solid #205529;
+      border-radius: 20px;
+      width: 75px;
+      height: 50px;
+
+      button {
+        font-weight: 700;
+        background: transparent;
+        border: none;
+        color: #205529;
+        margin: 7px;
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .btnClear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      background: transparent;
+      border: none;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+}

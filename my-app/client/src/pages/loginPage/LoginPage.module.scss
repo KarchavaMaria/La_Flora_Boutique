@@ -1,0 +1,122 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+  form {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #2055291a;
+    border-radius: 12px;
+
+    @media (width <= 500px) {
+      border: none;
+      margin: 20px;
+      padding: 0;
+    }
+
+    .error {
+      color: red;
+      padding: 10px;
+    }
+
+    .inputFormPassword {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        border: none;
+        background: none;
+        position: relative;
+        right: 50px;
+      }
+    }
+
+    .inputText {
+      width: 350px;
+      height: 50px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 15px;
+      position: relative;
+      background: rgba(#205529, 0.03);
+      border: 1px solid #2055291a;
+      border-radius: 12px;
+
+      @media (width <= 500px) {
+        width: 250px;
+      }
+
+      &.placeholder {
+        color: gray;
+        transition: all 1s ease-in-out;
+      }
+
+      &:focus::placeholder {
+        transform: translateY(-15px) scale(0.9);
+        opacity: 0.6;
+        font-size: 15px;
+      }
+    }
+
+    .remember {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      align-items: center;
+      justify-content: start;
+      margin: 10px;
+
+      .rememberMe {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .btnBlocks {
+      display: flex;
+
+      @media (width <= 500px) {
+        flex-direction: column;
+      }
+
+      .btnLog {
+        background: #205529;
+        border: none;
+        color: white;
+        border-radius: 30px;
+        margin: 20px;
+        width: 90%;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+
+        @media (width <= 500px) {
+          width: 80%;
+          margin: 10px;
+        }
+      }
+
+      .btnRegist {
+        background: #205529;
+        border: none;
+        color: white;
+        border-radius: 30px;
+        margin: 20px;
+        width: 90%;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+
+        @media (width <= 500px) {
+          width: 80%;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.tabPanel {
+  .tabs {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(#205529, 0.3);
+    margin: 0 20px 0 0;
+
+    button {
+      background: transparent;
+      border: none;
+      font-size: 15px;
+      margin: 0 15px 0 0;
+      padding: 15px 0;
+      color: rgba(#205529, 0.5);
+      cursor: pointer;
+
+      .tab {
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: #205529;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &:hover {
+        color: #205529;
+      }
+
+      &.tabActive {
+        color: #205529;
+        border-bottom: 2px solid #205529;
+        font-size: 16px;
+        font-weight: 500;
+        outline: none;
+      }
+    }
+  }
+}
+
+.tabContent {
+  .activeTab {
+  }
+
+  .checks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    .check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #2055291a;
+      border-radius: 12px;
+      background: rgba(#205529, 0.03);
+      padding: 0 10px;
+      margin: 5px;
+      font-size: 18px;
+
+      img {
+        width: 15px;
+        padding: 0 5px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}

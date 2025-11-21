@@ -1,0 +1,42 @@
+.profileOrders {
+  margin: 20px;
+  border: 1px solid #2055291a;
+  border-radius: 12px;
+  padding: 20px;
+
+  h3 {
+    font-size: 26px;
+    border-bottom: 1px solid gray;
+    width: 300px;
+  }
+
+  .flower {
+    img {
+      width: 100px;
+      border-radius: 12px;
+
+      &:hover {
+        box-shadow: 0 8px 18px rgb(100 75 50 / 15%);
+      }
+    }
+  }
+
+  .flowerInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    a {
+      font-size: 20px;
+
+      &:hover {
+        font-size: 21px;
+      }
+    }
+  }
+
+  p {
+    font-size: 18px;
+  }
+}

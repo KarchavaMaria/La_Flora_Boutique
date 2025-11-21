@@ -1,0 +1,68 @@
+.howItWorks {
+  background: rgba(#205529, 0.03);
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+
+      p {
+        font-size: 36px;
+        font-weight: 400;
+      }
+
+      button {
+        border: none;
+        background: none;
+        color: #205529;
+        font-size: 17px;
+      }
+
+      @media (width <= 600px) {
+        justify-content: space-evenly;
+      }
+    }
+
+    .stepBlocks {
+      display: flex;
+      align-items: center;
+
+      .stepBlock {
+        display: flex;
+
+        .step {
+          padding: 15px;
+        }
+
+        .description {
+          .stepTitle {
+            font-weight: 400;
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        @media (width <= 800px) {
+          flex-direction: column;
+          padding: 10px 20px;
+
+          .step {
+            padding: 5px;
+          }
+        }
+      }
+
+      @media (width <= 600px) {
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid #2055291a;
+  margin: 20px;
+
+  .title {
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .content {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (width <= 360px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

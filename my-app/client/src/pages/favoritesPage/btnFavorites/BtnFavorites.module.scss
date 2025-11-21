@@ -1,0 +1,21 @@
+.btnFavorites {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .btnFavorites {
+    background: none;
+    border: none;
+    margin: 0 10px;
+
+    img {
+      width: 40px;
+      transition: trsform 1s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

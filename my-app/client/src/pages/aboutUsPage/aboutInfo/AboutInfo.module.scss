@@ -1,0 +1,56 @@
+.aboutInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (width <= 900px) {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0 20px 20px;
+
+    h4 {
+      font-weight: 400;
+      font-size: 36px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .btnsBlock {
+      display: flex;
+      flex-wrap: wrap;
+
+      .btnGreen {
+        background: #205529;
+        color: #fff;
+        border: none;
+        width: 150px;
+        height: 40px;
+        border-radius: 6px;
+      }
+
+      .btnClear {
+        background: transparent;
+        color: #205529;
+        border: none;
+        width: 150px;
+        height: 40px;
+      }
+    }
+  }
+
+  .imageAbout {
+    align-self: center;
+    margin: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.CartPanel {
+  margin: 20px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  font-size: 20px;
+  color: #205529;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+
+  @media (width <= 800px) {
+    opacity: 0;
+  }
+}

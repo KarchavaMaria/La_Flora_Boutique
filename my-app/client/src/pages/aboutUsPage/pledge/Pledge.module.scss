@@ -1,0 +1,50 @@
+.pledge {
+  margin: 20px;
+
+  .pledgeInfo {
+    h4 {
+      font-weight: 400;
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .valueBlocks {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin: 20px 0;
+
+      @media (width <= 900px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (width <= 600px) {
+        grid-template-columns: 1fr;
+      }
+
+      .valueBlock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(#205529, 0.03);
+        border: 1px solid rgba(#205529, 0.1);
+        border-radius: 12px;
+        text-align: center;
+        transition: all 1s ease;
+
+        &:hover {
+          box-shadow: 1px 1px 2px #205529;
+        }
+
+        img {
+          padding: 10px;
+        }
+
+        p {
+          margin: 0 10px 15px;
+        }
+      }
+    }
+  }
+}

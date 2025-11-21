@@ -1,0 +1,80 @@
+.home {
+  .homeBackground {
+    background: #205529;
+    border-radius: 12px;
+    text-align: center;
+    color: #faf2e6;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0;
+
+      .flag {
+        border: 1px solid #faf2e6;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: clamp(20px, 4vw, 42px);
+        font-weight: 400;
+        line-height: 1.3;
+        margin: 10px 0;
+        max-width: 600px;
+      }
+
+      .homeBtnBrowse {
+        background: #faf2e6;
+        color: #205529;
+        border: none;
+        width: 150px;
+        height: 35px;
+        border-radius: 6px;
+        transition: 0.3s easy;
+
+        &:hover {
+          background: #205529;
+          color: #faf2e6;
+          border: 1px solid #faf2e6;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .flowerBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    border-bottom: 1px solid #2055291a;
+
+    p {
+      font-family: InstrumentRegular, serif;
+      font-size: 36px;
+      font-weight: 400;
+    }
+
+    button {
+      border: none;
+      background: none;
+      color: #205529;
+      font-size: 17px;
+      transition: 0.3s easy;
+
+      &:hover {
+        font-size: 18px;
+      }
+    }
+  }
+}

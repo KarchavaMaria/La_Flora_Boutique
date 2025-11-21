@@ -1,0 +1,135 @@
+footer {
+  margin: 0;
+
+  .container {
+    border-top: 1px solid #2055291a;
+    background: rgba(#205529, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+
+    span {
+      font-family: PontanoSans, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: InstrumentRegular, serif;
+    }
+
+    a {
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    .logoContainer {
+      grid-column: 1/3;
+      grid-row: 1/3;
+      padding: 0 50px;
+
+      .logo {
+        margin: 15px;
+        cursor: pointer;
+
+        p {
+          font-family: InstrumentSerif-Italic, serif;
+          font-weight: 400;
+          font-size: 24px;
+        }
+      }
+
+      .contacts {
+        .contact {
+          display: flex;
+          align-items: center;
+
+          img {
+            padding: 0 5px;
+          }
+
+          p {
+            margin: 5px;
+          }
+        }
+      }
+    }
+
+    .categories {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      padding: 10px 0;
+      grid-column: 3;
+    }
+
+    .company {
+      grid-column: 4;
+      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .followUs {
+      display: flex;
+      flex-direction: column;
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    .legal {
+      display: flex;
+      flex-direction: column;
+      grid-column: 4;
+      grid-row: 2;
+    }
+  }
+
+  @media (width <= 600px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      span,
+      p,
+      a {
+        font-size: 25px;
+      }
+
+      .logoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+          text-align: center;
+        }
+      }
+
+      .categories,
+      .company,
+      .followUs,
+      .legal,
+      a,
+      p {
+        margin: 0;
+        padding: 30px 0;
+      }
+    }
+  }
+
+  @media (width <= 400px) {
+    .contacts {
+      .contact {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

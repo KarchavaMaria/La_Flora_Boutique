@@ -1,0 +1,17 @@
+.profileFavorites {
+  margin: 20px;
+  border: 1px solid #2055291a;
+  border-radius: 12px;
+  padding: 20px;
+
+  h3 {
+    font-size: 26px;
+    border-bottom: 1px solid gray;
+    width: 300px;
+  }
+
+  .favorites {
+    display: flex;
+    align-items: center;
+  }
+}

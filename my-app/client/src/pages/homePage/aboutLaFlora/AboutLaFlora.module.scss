@@ -1,0 +1,56 @@
+.aboutLaFlora {
+  padding: 50px 20px;
+
+  .container {
+    padding: 20px;
+    background: #faf2e6;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+
+    @media (width <= 800px) {
+      grid-template-columns: 1fr;
+    }
+
+    .containerAboutLaFlora {
+      .flag {
+        border: 1px solid #205529;
+        width: 110px;
+        border-radius: 4px;
+        padding: 5px;
+      }
+
+      .contentInfo {
+        h2 {
+          font-size: 36px;
+          font-weight: 400;
+          font-family: InstrumentRegular, serif;
+        }
+
+        p {
+          font-family: PontanoSans, sans-serif;
+          font-size: 14px;
+        }
+      }
+
+      button {
+        width: 130px;
+        height: 40px;
+        background: #205529;
+        color: #faf2e6;
+        border: none;
+        border-radius: 6px;
+      }
+    }
+
+    .image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

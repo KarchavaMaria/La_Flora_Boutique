@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background: #faf2e6;
+  color: #205529;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #205529;
+}
+
+button {
+  cursor: pointer;
+}

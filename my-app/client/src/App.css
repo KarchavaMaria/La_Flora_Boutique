@@ -1,0 +1,37 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+}
+
+@media (width <= 1000px) {
+  .App {
+    flex-direction: column;
+  }
+}
+
+@media (width >= 1001px) {
+  flex-direction: row;
+
+  header {
+    position: sticky;
+    top: 0;
+    width: 260px;
+    flex-shrink: 0;
+    height: 100vh;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}

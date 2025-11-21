@@ -1,0 +1,11 @@
+.footerLegal {
+  border-top: 1px solid #2055291a;
+  background: rgba(#205529, 0.15);
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+}

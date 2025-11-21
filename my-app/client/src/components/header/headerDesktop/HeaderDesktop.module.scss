@@ -1,0 +1,115 @@
+.headerDesktop {
+  border-right: 1px solid #2055291a;
+
+  span {
+    font-family: PontanoSans, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: InstrumentRegular, serif;
+  }
+
+  .logo {
+    margin: 20px;
+    cursor: pointer;
+
+    p {
+      font-family: InstrumentSerif-Italic, serif;
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+
+  .navBarIcons {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    .icons {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 30px;
+        transition: trsform 1s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      .totalCount {
+        position: relative;
+        bottom: 15px;
+        right: 15px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: none;
+        padding: 3px;
+        background: #205529;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        color: #faf2e6;
+      }
+
+      .btnCart,
+      .btnExit,
+      .btnFavorites {
+        border: none;
+        background: none;
+      }
+    }
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    a {
+      margin: 10px 0;
+    }
+  }
+
+  .contactInfo {
+    background: rgba(#205529, 0.03);
+    border-top: 1px solid rgba(#205529, 0.1);
+    border-bottom: 1px solid rgba(#205529, 0.1);
+
+    .info {
+      margin: 20px;
+    }
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    a {
+      margin: 5px;
+    }
+
+    .terms {
+      font-family: PontanoSans, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      margin: 20px 0;
+    }
+  }
+}
+
+@media (width <= 1000px) {
+  .headerDesktop {
+    display: none;
+  }
+}

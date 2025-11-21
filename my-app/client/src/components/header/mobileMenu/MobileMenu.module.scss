@@ -1,0 +1,93 @@
+.mobileMenu {
+  position: absolute;
+  background: #faf2e6;
+  width: 100%;
+  height: 150vh;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  span {
+    font-family: PontanoSans, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 20px;
+  }
+
+  p,
+  a {
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: InstrumentRegular, serif;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  .allCategories {
+    display: flex;
+    padding: 20px 0;
+  }
+}
+
+.contactInfo {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #2055291a;
+  border-bottom: 1px solid #2055291a;
+  background: rgba(#205529, 0.03);
+
+  .info {
+    display: flex;
+  }
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  .terms {
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (width <= 700px) {
+  .allCategories,
+  .info,
+  .navBar {
+    flex-direction: column;
+  }
+
+  .allCategories a {
+    padding: 20px;
+  }
+
+  .info p {
+    margin: 5px 0;
+  }
+
+  .navBar {
+    .navLink {
+      padding: 20px 0;
+    }
+  }
+}
+
+@media (width <= 500px) {
+  .navBar {
+    .navLink {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        padding: 20px;
+      }
+    }
+  }
+}
