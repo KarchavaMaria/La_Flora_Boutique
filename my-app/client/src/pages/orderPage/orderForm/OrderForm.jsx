@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import CartList from '../../cartPage/cartList/CartList';
 import { clearCart } from '../../../store/cartSlice';
+import { API_URL } from '../../../../api/config';
 
 const schema = yup.object().shape({
   name: yup.string().required('Name is required'),
@@ -74,7 +75,7 @@ const OrderForm = () => {
     console.log(payload);
 
     try {
-      const res = await axios.post('http://localhost:5050/api/order', payload);
+      const res = await axios.post(`${API_URL}/order`, payload);
 
       if (res.status !== 200) throw new Error('Failed to save send message');
       reset();

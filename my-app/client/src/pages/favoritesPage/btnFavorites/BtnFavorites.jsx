@@ -4,6 +4,7 @@ import iconLike from '../../../assets/icons/icon_like.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { addFavorite, deleteFavorite } from '../../../store/favoriteSlice';
 import axios from 'axios';
+import { API_URL } from '../../../../api/config';
 
 const BtnFavorites = ({ product }) => {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const BtnFavorites = ({ product }) => {
   const addFavouriteHandler = async () => {
     if (user?.id) {
       await axios.post(
-        `http://localhost:5050/api/favorites`,
+        `${API_URL}/favorites`,
         {
           user_id: user.id,
           product_id: product.id,

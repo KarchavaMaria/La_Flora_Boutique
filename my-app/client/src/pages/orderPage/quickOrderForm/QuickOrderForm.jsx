@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './QuickOrderForm.module.scss';
 import iconSendBlack from '../../../assets/icons/icon_send_black.png';
 import iconSendWhite from '../../../assets/icons/icon_send_white.png';
+import  { API_URL } from '../../../../api/config';
 
 export const QuickOrderForm = ({ onSuccess }) => {
   const [phone, setPhone] = useState('');
@@ -20,7 +21,7 @@ export const QuickOrderForm = ({ onSuccess }) => {
     setLoading(true);
 
     try {
-      const res = await fetch(`/api/order/quick-order`, {
+      const res = await fetch(`${ API_URL }/order/quick-order`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ phone }),

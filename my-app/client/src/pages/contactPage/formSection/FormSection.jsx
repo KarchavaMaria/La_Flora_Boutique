@@ -4,6 +4,8 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { schema } from './schema';
 import axios from 'axios';
+import { API_URL } from '../../../../api/config';
+
 
 const FormSection = () => {
   const {
@@ -17,7 +19,7 @@ const FormSection = () => {
 
   const onSubmit = async (data) => {
     try {
-      const res = await axios.post(`http://localhost:5050/api/message`, data);
+      const res = await axios.post(`${ API_URL } /message`, data);
 
       if (!res.status !== 200) throw new Error('Failed to save send message');
 

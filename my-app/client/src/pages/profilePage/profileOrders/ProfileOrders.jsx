@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import {API_URL} from "../../../../api/config";
 
 const ProfileOrders = () => {
   const user = useSelector((state) => state.auth.user);
@@ -12,7 +13,7 @@ const ProfileOrders = () => {
     if (!user?.id) return;
 
     axios
-      .get(`http://localhost:5050/api/order/user/${user.id}`)
+      .get(` ${ API_URL }/order/user/${user.id}`)
       .then((res) => {
         console.log('ORDERS FROM SERVER:', res.data);
         setOrders(res.data);

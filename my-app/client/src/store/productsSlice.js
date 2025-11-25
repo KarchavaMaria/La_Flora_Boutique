@@ -1,11 +1,12 @@
 import axios from 'axios';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { API_URL } from '../../api/config';
 
 export const fetchAllProducts = createAsyncThunk(
   'products/fetchAllProducts',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get('http://localhost:5050/api/products');
+      const response = await axios.get(`${API_URL}/products`);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || error.message);
@@ -18,7 +19,7 @@ export const fetchProductById = createAsyncThunk(
   async (id, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `http://localhost:5050/api/products/${id}`
+        `${API_URL}/products/${id}`
       );
       return response.data;
     } catch (error) {
@@ -32,7 +33,7 @@ export const fetchProductsByCategory = createAsyncThunk(
   async (categoryId, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `http://localhost:5050/api/products/category/${categoryId}`
+        `${API_URL}/products/category/${categoryId}`
       );
       return response.data;
     } catch (error) {
