@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'InstrumentSerif-Italic';
+  src: url('../fontFamily/InstrumentSerif/InstrumentSerif-Italic.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InstrumentSerif-Regular';
+  src: url('../fontFamily/InstrumentSerif/InstrumentSerif-Regular.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PontanoSans';
+  src: url('../fontFamily/PontanoSans/static/PontanoSans-Medium.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
