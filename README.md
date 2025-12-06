@@ -1,4 +1,4 @@
-# La Flora Boutique
+# La Flora Boutique 💐
 
 A modern boutique e-commerce website featuring elegant product cards, smooth navigation and a clean UI.
 Built with React on the frontend and Node.js / Express on the backend. Fully responsive and easy to deploy.
