@@ -14,6 +14,7 @@ https://kovalyovamaria.github.io/La_Flora_Boutique/
 ---
 
 ## 🚀 Features
+- Authorization
 
 - Stylish and minimalist interface
 
