@@ -58,13 +58,13 @@ https://kovalyovamaria.github.io/La_Flora_Boutique/
 ## 📸 Photos website
 
 <p align="center">
-  
 <img width="1438" height="777" alt="Снимок экрана 2025-12-03 в 15 19 05" src="https://github.com/user-attachments/assets/cf27297d-4059-4007-a5d8-9dc431d70059" />
-
+</p>
+<p align="center">
 <img width="638" height="654" alt="Снимок экрана 2025-12-03 в 15 59 43" src="https://github.com/user-attachments/assets/6a915091-7dda-479d-9752-3de5ed367111" />
-
+</p>
+<p align="center">
 <img width="139" height="302" alt="Снимок экрана 2025-12-03 в 16 01 06" src="https://github.com/user-attachments/assets/b1b3cf3e-d7d3-4dcb-b690-74b394ee7e11" />
-
 </p>
 
 ---
