@@ -4,20 +4,20 @@ import iconLike from '../../../assets/icons/icon_like.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { addFavorite, deleteFavorite } from '../../../store/favoriteSlice';
 import axios from 'axios';
-import { API_URL } from '../../../../api/config';
+import { API_URL } from '../../../api/config';
 
 const BtnFavorites = ({ product }) => {
   const dispatch = useDispatch();
 
   const user = useSelector((state) => state.auth.user);
   const token = useSelector((state) => state.auth.token);
-  const favorites = useSelector((state) => state.favorites.favorites);
-  const isFavorite = favorites.some((f) => f.id === product.id);
+  const favorites = useSelector((state) => state.favorites.favorites) || [];
+  const isFavorite = Array.isArray(favorites) && favorites.some((f) => f.id === product.id);
 
   const addFavouriteHandler = async () => {
     if (user?.id) {
       await axios.post(
-        `${API_URL}/favorites`,
+        `${API_URL}/api/favorites`,
         {
           user_id: user.id,
           product_id: product.id,

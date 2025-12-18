@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { setUser } from '../../../store/authSlice';
-import {API_URL} from "../../../../api/config";
+import {API_URL} from "../../../api/config";
 
 const ProfileInfo = () => {
   const dispatch = useDispatch();
@@ -43,7 +43,7 @@ const ProfileInfo = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.put(`${ API_URL }/auth/update`, {
+      const res = await axios.put(`${ API_URL }/api/auth/update`, {
         id: user.id,
         name: formData.name,
         email: formData.email,

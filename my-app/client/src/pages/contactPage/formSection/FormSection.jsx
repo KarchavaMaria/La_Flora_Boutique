@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { schema } from './schema';
 import axios from 'axios';
-import { API_URL } from '../../../../api/config';
+import { API_URL } from '../../../api/config';
 
 
 const FormSection = () => {

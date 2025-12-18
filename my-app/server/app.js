@@ -9,6 +9,7 @@ import messageRoutes from './routes/messageRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import favoritesRoutes from './routes/favoritesRoutes.js';
 import { globalLimiter } from './middleware/rateLimiter.js';
+import {fileURLToPath} from "url";
 
 dotenv.config();
 const app = express();
@@ -35,5 +36,10 @@ app.use('/api/order', orderRoutes);
 app.use('/api/message', messageRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/favorites', favoritesRoutes);
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const clientBuildPath = path.join(__dirname, "../client/build");
+app.use(express.static(clientBuildPath));
 
 export default app;

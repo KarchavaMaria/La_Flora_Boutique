@@ -13,6 +13,7 @@ const favoriteSlice = createSlice({
       localStorage.setItem('favorites', JSON.stringify(state.favorites));
     },
     addFavorite: (state, action) => {
+      if (!Array.isArray(state.favorites)) state.favorites = [];
       state.favorites.push(action.payload);
       localStorage.setItem('favorites', JSON.stringify(state.favorites));
     },

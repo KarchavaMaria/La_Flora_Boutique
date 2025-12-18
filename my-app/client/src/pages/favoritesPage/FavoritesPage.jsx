@@ -4,7 +4,8 @@ import ProductsCard from '../../components/products/ProductsCard';
 import PageHeader from '../pageHeader/PageHeader';
 
 const FavoritesPage = () => {
-  const favorites = useSelector((state) => state.favorites.favorites);
+    const favoritesState = useSelector((state) => state.favorites.favorites);
+    const favorites = Array.isArray(favoritesState) ? favoritesState : [];
 
   return (
     <>

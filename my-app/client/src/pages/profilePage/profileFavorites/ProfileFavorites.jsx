@@ -4,19 +4,20 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { setFavorite } from '../../../store/favoriteSlice';
-import {API_URL} from "../../../../api/config";
+import {API_URL} from "../../../api/config";
 
 
 const ProfileFavorites = () => {
   const dispatch = useDispatch();
 
-  const favorites = useSelector((state) => state.favorites.favorites);
+    const favoritesState = useSelector((state) => state.favorites.favorites);
+    const favorites = Array.isArray(favoritesState) ? favoritesState : [];
   const user = useSelector((state) => state.auth.user);
 
   useEffect(() => {
     if (!user?.id) return;
     axios
-      .get(`${ API_URL }/favorites/${user.id}`)
+      .get(`${ API_URL }/api/favorites/${user.id}`)
       .then((res) => {
         console.log('ORDERS FROM SERVER:', res.data);
         dispatch(setFavorite(res.data));
@@ -36,7 +37,7 @@ const ProfileFavorites = () => {
       <div className={styles.favorites}>
         {favorites.map((fav) => (
           <div key={fav.id}>
-            <ProductsCard key={fav.id} product={fav} />
+            <ProductsCard product={fav} />
           </div>
         ))}
       </div>

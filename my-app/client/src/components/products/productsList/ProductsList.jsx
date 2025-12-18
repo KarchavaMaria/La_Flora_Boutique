@@ -25,8 +25,8 @@ const ProductsList = ({ start = 0, limit, categoryId }) => {
   const filteredStatus = filteredStatusByCategory[categoryId] || 'idle';
   const filteredError = filteredErrorByCategory[categoryId] || null;
 
-  const products = categoryId ? filteredState : allState.items || [];
-  const status = categoryId ? filteredStatus : allState.status || 'idle';
+  const rawProducts = categoryId ? filteredState : allState.items;
+  const products = Array.isArray(rawProducts) ? rawProducts : [];  const status = categoryId ? filteredStatus : allState.status || 'idle';
   const error = categoryId ? filteredError : allState.error || null;
 
   useEffect(() => {
