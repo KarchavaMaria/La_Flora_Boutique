@@ -76,4 +76,4 @@ https://kovalyovamaria.github.io/La_Flora_Boutique/
 ## 💻 How to Run Locally
 1. Clone the repository:
 ```bash
-git clone https://github.com/KovalyovaMaria/DLa_Flora_Boutique.git
+git clone https://github.com/KarchavaMaria/La_Flora_Boutique.git
